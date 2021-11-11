@@ -1,6 +1,7 @@
 {
     "name": "siu-toba/jasper",
     "description": "Librerías básicas para impresión via Jasper",
+    "abandoned": true,
     "authors": [
         {
             "name": "SIU",
