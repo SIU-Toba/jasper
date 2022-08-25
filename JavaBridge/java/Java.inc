@@ -1038,7 +1038,7 @@ stream_set_timeout($socket, -1);
 return $socket;
 }
 function __construct($protocol, $ssl, $host, $port) {
-parent::java_SimpleHttpHandler($protocol, $ssl, $host, $port);
+parent::__construct($protocol, $ssl, $host, $port);
 $this->socket = $this->open();
 }
 function write($data) {
@@ -2010,7 +2010,7 @@ return $retval;
 }
 }
 class java_InternalJava extends Java {
-function java_InternalJava($proxy) {
+function __construct($proxy) {
 $this->__delegate = $proxy;
 $this->__java = $proxy->__java;
 $this->__signature = $proxy->__signature;
